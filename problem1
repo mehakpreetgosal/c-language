@@ -1,0 +1,14 @@
+/* writing a program to calculate overtime pay of 10 employees. overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. 
+Assume that employees do not work for fractional part of an hour. */
+#include <stdio.h>
+int main() {
+int no_hours;
+int overtime , work_hours;
+work_hours = 40;
+while(no_hours > work_hours)
+{
+  printf("overtime = rupees 12 ");
+  no_hours--;
+}
+return 0;
+}
