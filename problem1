@@ -2,13 +2,23 @@
 Assume that employees do not work for fractional part of an hour. */
 #include <stdio.h>
 int main() {
-int no_hours;
-int overtime , work_hours;
-work_hours = 40;
-while(no_hours > work_hours)
-{
-  printf("overtime = rupees 12 ");
-  no_hours--;
-}
-return 0;
+     int hours, overtime_pay , i;
+     // i is number of employees
+  i = 1;
+  while(i<=10)
+       {
+          printf("enter the number of hours worked by the employee : ");
+          scanf(" \n %d", &hours );
+
+          if(hours >40)
+               {
+                    overtime_pay = ( hours - 40 ) * 12;
+                    printf(" \n the overtime pay of the employee is : %d",overtime_pay );
+               }
+          else {
+               printf("\n no overtime pay ");
+          }
+          i++;
+      }
+  return 0;
 }
